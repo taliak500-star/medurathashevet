@@ -106,6 +106,17 @@
             background: #ffffff;
             border-top: 1px solid #e1e9e2;
         }
+        .day-header {
+            background: var(--forest-green);
+            color: var(--white);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
         .timeline-item {
             position: relative;
             padding-right: 25px;
@@ -194,7 +205,7 @@
 
     <div class="hero">
         <h1>קמפינג סוכות בפארק הכרמל</h1>
-        <p>חוויית טבע משפחתית בחול המועד – הגשרים התלויים, עששיות בשקיעה, זריחה בחורשת הארבעים וחי-בר כרמל</p>
+        <p>חוויית טבע משפחתית בחול המועד – מעיינות, סדנאות אומנות, עששיות, כוכבים ופיסול באדמה</p>
     </div>
 
     <div class="wrapper">
@@ -215,31 +226,35 @@
 
             <div class="grid-cards">
                 <div class="card">
-                    <h3><i class="fas fa-bridge"></i> פארק נשר והגשרים התלויים</h3>
-                    <p>פתיחת החוויה בטיול קליל ומרגש בין צמרות העצים על הגשרים התלויים בפארק נשר, לפני ההגעה לחניון.</p>
+                    <h3><i class="fas fa-water"></i> מעיינות, טיולים וסמטאות</h3>
+                    <p>הליכה בין הגשרים התלויים בפארק נשר, סיור בסמטאות עוספיה וטבילה מרעננת במים הקרירים של עין אלון.</p>
                 </div>
                 <div class="card">
-                    <h3><i class="fas fa-fire"></i> עששיות, שקיעה וסיר פוייקה</h3>
-                    <p>סדנת עששיות לילדים, הליכה למצפור הצוק לתצפית שקיעה, חזרה בטיול עששיות וסיר פוייקה עשיר על גחלי המדורה.</p>
+                    <h3><i class="fas fa-paint-brush"></i> סדנאות יצירה ואומנות</h3>
+                    <p>סדנת הכנת עששיות, יצירת תליונים ושרשראות מחומרי הטבע, וסדנת פיסול באדמה חווייתית לילדים ולמבוגרים.</p>
                 </div>
                 <div class="card">
-                    <h3><i class="fas fa-sun"></i> זריחה ופיתות בטאבון</h3>
-                    <p>תצפית זריחה עוצרת נשימה במצוק חורשת הארבעים, קפה של בוקר ואפיית פיתות חמות על הטאבון והסאג'.</p>
+                    <h3><i class="fas fa-star"></i> שקיעות, כוכבים וזריחות</h3>
+                    <p>תצפיות שקיעה מרהיבות מול השמיים הצבועים עם תה צמחים מהביל, תצפית כוכבים לילית וזריחה בחורשת הארבעים.</p>
                 </div>
                 <div class="card">
-                    <h3><i class="fas fa-paw"></i> סיור בשמורת חי-בר כרמל</h3>
-                    <p>סיור מרתק בשמורת הטבע חי-בר כרמל, מפגש קרוב עם יחמורים פרסיים, איילים ונשרים בסביבתם הטבעית.</p>
+                    <h3><i class="fas fa-utensils"></i> בישולי שטח וארוחות משותפות</h3>
+                    <p>סיר פוייקה עשיר, מרק ירקות מפנק, לחם אינדיאני ופיתות חמות על גחלי המדורה, הטאבון והסאג'.</p>
                 </div>
             </div>
 
             <!-- תפריט נפתח ללו"ז המפורט של הכרמל -->
             <details class="schedule-details-box">
                 <summary class="schedule-summary-btn">
-                    <span><i class="fas fa-clock" style="color: var(--campfire-orange); margin-left: 8px;"></i> לצפייה בלוח הזמנים המפורט שעה-אחר-שעה</span>
+                    <span><i class="fas fa-clock" style="color: var(--campfire-orange); margin-left: 8px;"></i> לצפייה בלוח הזמנים המפורט שעה-אחר-שעה (27-29.9)</span>
                     <i class="fas fa-chevron-down"></i>
                 </summary>
                 <div class="schedule-content">
-                    <h4 style="color: var(--forest-green); margin-bottom: 12px; font-size: 17px;">יום 1:</h4>
+                    
+                    <!-- חלק 1: 27-28.9 -->
+                    <div class="day-header">📌 תוכנית לילה ראשון: 27-28 בספטמבר</div>
+                    
+                    <h4 style="color: var(--forest-green); margin-bottom: 12px; font-size: 16px; font-weight: 800;">יום ראשון | 27.9 - גשרים תלויים, עששיות וסיר פוייקה:</h4>
                     <div class="timeline-item">
                         <span class="timeline-time">15:00 - 16:30</span>
                         <span class="timeline-text">התכנסות וטיול רגוע במסלול הגשרים התלויים בפארק נשר.</span>
@@ -258,7 +273,7 @@
                     </div>
                     <div class="timeline-item">
                         <span class="timeline-time">18:45 - 19:45</span>
-                        <span class="timeline-text">טיול עששיות קליל למצפור הצוק לתצפית שקיעה וחזרה למאהל .</span>
+                        <span class="timeline-text">טיול עששיות קליל למצפור הצוק לתצפית שקיעה וחזרה למאהל.</span>
                     </div>
                     <div class="timeline-item">
                         <span class="timeline-time">19:45 - 21:00</span>
@@ -269,10 +284,10 @@
                         <span class="timeline-text">התארגנות לשנת הלילה.</span>
                     </div>
 
-                    <h4 style="color: var(--forest-green); margin-top: 20px; margin-bottom: 12px; font-size: 17px;">יום 2:</h4>
+                    <h4 style="color: var(--forest-green); margin-top: 20px; margin-bottom: 12px; font-size: 16px; font-weight: 800;">יום שני | 28.9 - זריחה, טאבון וסיור בחי-בר:</h4>
                     <div class="timeline-item">
                         <span class="timeline-time">06:20 - 06:45</span>
-                        <span class="timeline-text">למשכימי קום הליכה רגלית קצרה (כ־10 דקות) לתצפית זריחה במצוק חורשת הארבעים.</span>
+                        <span class="timeline-text">למשכימי קום - הליכה רגלית קצרה (כ־10 דקות) לתצפית זריחה במצוק חורשת הארבעים.</span>
                     </div>
                     <div class="timeline-item">
                         <span class="timeline-time">06:45 - 07:30</span>
@@ -284,7 +299,7 @@
                     </div>
                     <div class="timeline-item">
                         <span class="timeline-time">09:00 - 10:00</span>
-                        <span class="timeline-text">קיפול ציוד, פירוק האוהלים וניקיון יסודי של השטח.</span>
+                        <span class="timeline-text">קיפול ציוד, פירוק האוהלים וניקיון יסודי של השטח (למסיימים בלילה הראשון).</span>
                     </div>
                     <div class="timeline-item">
                         <span class="timeline-time">10:00 - 12:30</span>
@@ -292,8 +307,66 @@
                     </div>
                     <div class="timeline-item">
                         <span class="timeline-time">12:30</span>
-                        <span class="timeline-text">מעגל סיום.</span>
+                        <span class="timeline-text">מעגל סיום למסיימים את הלילה הראשון.</span>
                     </div>
+
+                    <hr style="margin: 30px 0; border: none; border-top: 2px dashed #cdd8cf;">
+
+                    <!-- חלק 2: 28-29.9 -->
+                    <div class="day-header">📌 תוכנית לילה שני: 28-29 בספטמבר[cite: 1]</div>
+
+                    <h4 style="color: var(--forest-green); margin-bottom: 12px; font-size: 16px; font-weight: 800;">יום שני | 28.9 - סמטאות, מעיין מוצל, אומנות מהטבע ולילה זרוע כוכבים[cite: 1]:</h4>
+                    <div class="timeline-item">
+                        <span class="timeline-time">12:30 - 14:30</span>
+                        <span class="timeline-text">הפסקת צהריים בעספיה – סיור רגלי ציורי בסמטאות אבן עתיקות, תצפית נוף מרהיבה וארוחת צהריים עצמאית[cite: 1].</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">14:30 - 16:30</span>
+                        <span class="timeline-text">טבילה בעין אלון – הליכה קלה של קילומטר (כרבע שעה) בתוך חורש מוצל לשכשוך קריר ומרענן במעיין (למי שמעוניין)[cite: 1].</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">17:00</span>
+                        <span class="timeline-text">חזרה לחניון הלילה, התמקמות וזמן למנוחה[cite: 1].</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">17:30 - 18:30</span>
+                        <span class="timeline-text">סדנת אומנות – הכנת שרשרת ותליון מחומרי הטבע[cite: 1].</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">18:30</span>
+                        <span class="timeline-text">תצפית שקיעה – רגע של שקט מול השמיים הצבועים, עם תה צמחים מהביל[cite: 1].</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">19:00 - 20:30</span>
+                        <span class="timeline-text">בישול וארוחת ערב משותפת: הכנת מרק ירקות עשיר, לחם על גחלים, ובטטות ותפוחי אדמה על המדורה[cite: 1].</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">21:00</span>
+                        <span class="timeline-text">תצפית כוכבים לילית באוויר הקריר[cite: 1].</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">21:30</span>
+                        <span class="timeline-text">לילה טוב[cite: 1].</span>
+                    </div>
+
+                    <h4 style="color: var(--forest-green); margin-top: 20px; margin-bottom: 12px; font-size: 16px; font-weight: 800;">יום שלישי | 29.9 - ארוחת בוקר, יצירה באדמה ופרידה[cite: 1]:</h4>
+                    <div class="timeline-item">
+                        <span class="timeline-time">07:30 - 08:30</span>
+                        <span class="timeline-text">התעוררות רגועה, קפה, תה צמחים ושוקו חם לילדים[cite: 1].</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">08:30 - 10:00</span>
+                        <span class="timeline-text">ארוחת בוקר – צליית לחם אינדיאני על גחלים לצד ירקות וממרחים[cite: 1].</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">10:00 - 11:15</span>
+                        <span class="timeline-text">סדנת פיסול באדמה – חוויה תחושתית ומקרקעת לילדים ולמבוגרים[cite: 1].</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">11:15 - 12:00</span>
+                        <span class="timeline-text">מעגל סיכום ופרידה, קיפול ציוד ויציאה לדרך חזרה הביתה[cite: 1].</span>
+                    </div>
+
                 </div>
             </details>
 
@@ -360,7 +433,7 @@
                         <input type="email" id="parentEmail" placeholder="example@domain.com" required>
                     </div>
 
-                    <!-- בחירת מבוגרים וילדים - ברירת מחדל: 1 מבוגר ו-1 ילד -->
+                    <!-- בחירת מבוגרים וילדים -->
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
                         <div class="form-group">
                             <label>מספר מבוגרים:</label>
@@ -373,7 +446,7 @@
                         </div>
                         <div class="form-group">
                             <label>מספר ילדים:</label>
-                            <select id="kidsNum" onchange="calculateTotal()">
+                            <select id="kidsNum" onchange="handleKidsChange()">
                                 <option value="0">ללא ילדים</option>
                                 <option value="1" selected>1</option>
                                 <option value="2">2</option>
@@ -383,6 +456,12 @@
                                 <option value="6">6</option>
                             </select>
                         </div>
+                    </div>
+
+                    <!-- שדה הוספת גילאי הילדים -->
+                    <div class="form-group" id="kidsAgesContainer">
+                        <label><i class="fas fa-child" style="color: var(--campfire-orange);"></i> גילאי הילדים (חובה):</label>
+                        <input type="text" id="kidsAges" placeholder="לדוגמה: 4, 7, 10" required>
                     </div>
 
                     <!-- צ'קבוקס הבאת ציוד עצמאי -->
@@ -459,8 +538,25 @@
         </div>
     </div>
 
+    <footer>
+        <p>&copy; 2026 מדורת השבט - קמפינג וחוויות טבע משפחתיות. כל הזכויות שמורות.</p>
+    </footer>
+
     <script>
         const MY_WHATSAPP_NUMBER = "972559914540"; 
+
+        function handleKidsChange() {
+            const kidsNum = parseInt(document.getElementById('kidsNum').value) || 0;
+            const agesContainer = document.getElementById('kidsAgesContainer');
+            
+            if (kidsNum > 0) {
+                agesContainer.style.display = 'flex';
+            } else {
+                agesContainer.style.display = 'none';
+                document.getElementById('kidsAges').value = '';
+            }
+            calculateTotal();
+        }
 
         function handleStartDateChange() {
             const startVal = parseInt(document.getElementById('startDateSelect').value);
@@ -478,53 +574,78 @@
         }
 
         function calculateTotal() {
-            const adults = parseInt(document.getElementById('adultsNum').value);
-            const kids = parseInt(document.getElementById('kidsNum').value);
+            const adults = parseInt(document.getElementById('adultsNum').value) || 0;
+            const kids = parseInt(document.getElementById('kidsNum').value) || 0;
+            const bringOwnGear = document.getElementById('bringOwnGear').checked;
+
             const startVal = parseInt(document.getElementById('startDateSelect').value);
             const endVal = parseInt(document.getElementById('endDateSelect').value);
-            const isOwnGear = document.getElementById('bringOwnGear').checked;
-            
-            let night1Total = adults * 250;
-            if (kids > 0) {
-                const firstTwo = Math.min(2, kids);
-                const extraKids = Math.max(0, kids - 2);
-                night1Total += (firstTwo * 170) + (extraKids * 50);
-            }
-
-            let total = night1Total;
             const nights = endVal - startVal;
-            let extraCost = 0;
 
-            if (nights > 1) {
-                extraCost = 300;
-                if (adults > 1) extraCost += (adults - 1) * 100;
-                if (kids > 1) extraCost += (kids - 1) * 50;
-                total += extraCost;
+            if (nights <= 0) return;
+
+            // חישוב לילה ראשון
+            let firstNightTotal = adults * 250;
+            if (kids === 1) {
+                firstNightTotal += 170;
+            } else if (kids === 2) {
+                firstNightTotal += 170 * 2;
+            } else if (kids >= 3) {
+                firstNightTotal += (170 * 2) + ((kids - 2) * 50);
             }
 
-            if (isOwnGear) {
-                total = Math.max(0, total - (100 * nights));
+            let grandTotal = firstNightTotal;
+
+            // חישוב לילה שני במידה ונבחר
+            if (nights === 2) {
+                let secondNightTotal = 0;
+                if (adults >= 1 && kids >= 1) {
+                    secondNightTotal += 300; // בסיס הורה 1 + ילד 1
+                    secondNightTotal += (adults - 1) * 100; // הורה נוסף
+                    secondNightTotal += (kids - 1) * 50; // ילד נוסף
+                } else {
+                    secondNightTotal += adults * 100 + kids * 50;
+                }
+                grandTotal += secondNightTotal;
             }
 
-            const nightsText = nights === 1 ? "לילה 1" : `${nights} לילות`;
-            const extraText = extraCost > 0 ? ` (כולל ₪${extraCost} עבור לילה שני)` : '';
-            document.getElementById('selectedDateBanner').innerHTML = `תאריכים נבחרים: ${startVal}.9 עד ${endVal}.9 (${nightsText})${extraText}<br><span style="font-size:12px; color:#ffeb3b;">*מותנה במספר נרשמים מינימלי</span>`;
-            document.getElementById('totalAmount').innerText = total;
+            // הנחת ציוד עצמאי
+            if (bringOwnGear) {
+                grandTotal -= (100 * nights);
+            }
+
+            if (grandTotal < 0) grandTotal = 0;
+
+            document.getElementById('totalAmount').innerText = grandTotal;
+            document.getElementById('modalTotal').innerText = grandTotal;
+
+            // עדכון באנר תאריכים
+            const datesText = `תאריכים נבחרים: ${startVal}.9 עד ${endVal}.9 (${nights} ${nights === 1 ? 'לילה' : 'לילות'})`;
+            document.getElementById('selectedDateBanner').innerText = datesText;
         }
 
         function openPaymentModal() {
             const name = document.getElementById('parentName').value.trim();
             const phone = document.getElementById('parentPhone').value.trim();
             const email = document.getElementById('parentEmail').value.trim();
-            const total = document.getElementById('totalAmount').innerText;
+            const kids = parseInt(document.getElementById('kidsNum').value) || 0;
+            const kidsAges = document.getElementById('kidsAges').value.trim();
 
-            if(!name || !phone || !email) {
-                alert('אנא מלאו שם מלא, טלפון נייד וכתובת מייל כדי להמשיך להרשמה.');
+            if (!name || !phone || !email) {
+                alert('אנא למלא את כל שדות החובה (שם, טלפון ומייל) לפני ההרשמה.');
                 return;
             }
 
-            document.getElementById('modalTotal').innerText = total;
+            if (kids > 0 && !kidsAges) {
+                alert('אנא ציין/י את גילאי הילדים.');
+                return;
+            }
+
             document.getElementById('paymentModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('paymentModal').style.display = 'none';
         }
 
         function sendOrderToWhatsApp(paymentMethod) {
@@ -533,36 +654,39 @@
             const email = document.getElementById('parentEmail').value.trim();
             const adults = document.getElementById('adultsNum').value;
             const kids = document.getElementById('kidsNum').value;
+            const kidsAges = document.getElementById('kidsAges').value.trim();
+            const bringOwnGear = document.getElementById('bringOwnGear').checked ? "כן (הנחה ₪100 ללילה)" : "לא";
+            
             const startVal = document.getElementById('startDateSelect').value;
             const endVal = document.getElementById('endDateSelect').value;
-            const isOwnGear = document.getElementById('bringOwnGear').checked ? "כן (מביאים ציוד עצמאית)" : "לא (אספקת ציוד מלאה)";
             const total = document.getElementById('totalAmount').innerText;
 
-            const message = `שלום! נרשמתי לקמפינג סוכות בכרמל (חניון כלניות):%0A%0A` +
-                            `שם מלא: ${name}%0A` +
-                            `טלפון: ${phone}%0A` +
-                            `מייל: ${email}%0A` +
-                            `תאריכים: ${startVal}.9 עד ${endVal}.9%0A` +
-                            `הרכב משפחתי: ${adults} מבוגרים, ${kids} ילדים%0A` +
-                            `ציוד עצמאי: ${isOwnGear}%0A` +
-                            `סך הכל לתשלום: ₪${total}%0A` +
-                            `אופן תשלום מבוקש: ${paymentMethod}%0A%0A` +
-                            `* ידוע לי כי היציאה לפעילות מותנית במספר נרשמים מינימלי.%0A` +
-                            `אשמח לקבל קישור לתשלום לשריין את מקומנו. תודה!`;
+            let kidsText = `${kids} ילדים`;
+            if (parseInt(kids) > 0 && kidsAges) {
+                kidsText += ` (גילאים: ${kidsAges})`;
+            }
 
-            const waUrl = `https://wa.me/${MY_WHATSAPP_NUMBER}?text=${message}`;
-            window.open(waUrl, '_blank');
+            const text = `שלום, ברצוני להירשם לקמפינג סוכות בכרמל ⛰️
+            
+📌 *פרטי ההזמנה:*
+• שם מלא: ${name}
+• טלפון: ${phone}
+• מייל: ${email}
+• הרכב: ${adults} מבוגרים, ${kidsText}
+• ציוד מהבית: ${bringOwnGear}
+• תאריכים: ${startVal}.9 - ${endVal}.9
+• סה"כ לתשלום: ₪${total}
+• אופן תשלום מבוקש: ${paymentMethod}`;
+
+            const url = `https://wa.me/${MY_WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank');
             closeModal();
         }
 
-        function closeModal() { document.getElementById('paymentModal').style.display = 'none'; }
-        window.onload = function() { calculateTotal(); };
+        // חישוב ראשוני בטעינה
+        window.onload = function() {
+            handleKidsChange();
+        };
     </script>
-
-    <footer>
-        <p>מדורת השבט | קמפינג משפחות, חוויות טבע ומלאכות קדומות</p>
-        <p style="font-size: 12px; color: #6a826f; margin-top: 5px;">טלפון ליצירת קשר: 055-9914540</p>
-    </footer>
-
 </body>
 </html>
