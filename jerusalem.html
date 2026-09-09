@@ -373,6 +373,11 @@
                         </div>
                     </div>
 
+                    <div class="form-group" id="kidsAgesGroup">
+                        <label>גילאי הילדים:</label>
+                        <input type="text" id="kidsAges" placeholder="למשל: 3, 6, 10">
+                    </div>
+
                     <label class="checkbox-container">
                         <input type="checkbox" id="bringOwnGear" onchange="calculateTotal()">
                         <span>מגיעים עם אוהל ומזרנים מהבית (100 ₪ הנחה)</span>
@@ -435,6 +440,14 @@
             const kids = parseInt(document.getElementById('kidsNum').value);
             const isOwnGear = document.getElementById('bringOwnGear').checked;
             
+            // הסתרה/הצגה דינמית של שדה גילאי הילדים במידה ונבחר 0 ילדים
+            const kidsAgesGroup = document.getElementById('kidsAgesGroup');
+            if (kids === 0) {
+                kidsAgesGroup.style.display = 'none';
+            } else {
+                kidsAgesGroup.style.display = 'flex';
+            }
+
             let total = adults * 250;
             if (kids > 0) {
                 const firstTwo = Math.min(2, kids);
@@ -453,10 +466,17 @@
             const name = document.getElementById('parentName').value.trim();
             const phone = document.getElementById('parentPhone').value.trim();
             const email = document.getElementById('parentEmail').value.trim();
+            const kids = parseInt(document.getElementById('kidsNum').value);
+            const kidsAges = document.getElementById('kidsAges').value.trim();
             const total = document.getElementById('totalAmount').innerText;
 
             if(!name || !phone || !email) {
                 alert('אנא מלאו שם מלא, טלפון נייד וכתובת מייל כדי להמשיך להרשמה.');
+                return;
+            }
+
+            if(kids > 0 && !kidsAges) {
+                alert('אנא ציינו את גילאי הילדים כדי להמשיך.');
                 return;
             }
 
@@ -470,16 +490,22 @@
             const email = document.getElementById('parentEmail').value.trim();
             const adults = document.getElementById('adultsNum').value;
             const kids = document.getElementById('kidsNum').value;
+            const kidsAges = document.getElementById('kidsAges').value.trim();
             const dateText = "22-23 לספטמבר 2026 (קמפינג אמהות וילדים)";
             const isOwnGear = document.getElementById('bringOwnGear').checked ? "כן (מביאים אוהל ומזרנים עצמאית - 100 ₪ הנחה)" : "לא (אספקת ציוד מלאה על ידי מדורת השבט)";
             const total = document.getElementById('totalAmount').innerText;
+
+            let kidsInfoText = `${kids} ילדים`;
+            if (parseInt(kids) > 0 && kidsAges) {
+                kidsInfoText += ` (גילאים: ${kidsAges})`;
+            }
 
             const message = `שלום! נרשמתי לקמפינג בהרי ירושלים:%0A%0A` +
                             `שם מלא: ${name}%0A` +
                             `טלפון: ${phone}%0A` +
                             `מייל: ${email}%0A` +
                             `מועד: ${dateText}%0A` +
-                            `הרכב משפחתי: ${adults} מבוגרים, ${kids} ילדים%0A` +
+                            `הרכב משפחתי: ${adults} מבוגרים, ${kidsInfoText}%0A` +
                             `ציוד עצמאי: ${isOwnGear}%0A` +
                             `סך הכל לתשלום: ₪${total}%0A` +
                             `אופן תשלום מבוקש: ${paymentMethod}%0A%0A` +
